@@ -126,7 +126,7 @@ function Pad({clip, volume, setRecording}){
 
 
     const playSound = () => {
-        const audioTag = document.getElementById("clip.keyTrigger");
+        const audioTag = document.getElementById(clip.keyTrigger);
         setActive(true);
         setTimeout(() => setActive(false), 200);
         audioTag.volume = volume;
